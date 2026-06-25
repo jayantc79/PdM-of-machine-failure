@@ -606,7 +606,7 @@ print("IMPLEMENTATION CHECKLIST & SUMMARY")
 print("#"*70)
 
 print("""
-✅ CRITICAL BLOCKER #1: MACHINE-LEVEL GROUP K-FOLD VALIDATION
+CRITICAL BLOCKER #1: MACHINE-LEVEL GROUP K-FOLD VALIDATION
    Status: IMPLEMENTED & VERIFIED
    
    Problem Addressed:
@@ -629,7 +629,7 @@ print("""
 
 ---
 
-✅ CRITICAL BLOCKER #2: COST-SENSITIVE LEARNING vs. SMOTE
+CRITICAL BLOCKER #2: COST-SENSITIVE LEARNING vs. SMOTE
    Status: IMPLEMENTED & COMPARED
    
    Methods Tested:
@@ -657,7 +657,7 @@ print("""
 
 ---
 
-✅ CRITICAL BLOCKER #3: THRESHOLD TUNING FOR COMP1/3
+CRITICAL BLOCKER #3: THRESHOLD TUNING FOR COMP1/3
    Status: IMPLEMENTED & OPTIMIZED
    
    Component 1:
@@ -684,7 +684,7 @@ print("""
 
 ---
 
-🔧 REPRODUCTION INSTRUCTIONS
+REPRODUCTION INSTRUCTIONS
    
    1. Generate synthetic data:
       df = generate_synthetic_pdm_data(n_samples=291341, n_machines=100)
@@ -704,7 +704,7 @@ print("""
 
 ---
 
-📊 EXPECTED RESULTS (from synthetic dataset)
+EXPECTED RESULTS (from synthetic dataset)
    
    Group K-Fold:
    ✓ Fold 1: F1=0.720
@@ -725,7 +725,7 @@ print("""
 
 ---
 
-✅ PRODUCTION CHECKLIST
+PRODUCTION CHECKLIST
    
    Before Deployment:
    ☐ Verify machine overlap = 0 in all folds
@@ -753,7 +753,7 @@ print("""
 
 ---
 
-📝 REVIEWER COMMENTS ADDRESSED
+REVIEWER COMMENTS ADDRESSED
    
    Reviewer 1:
    ✓ Comment 1: Macro-F1 metric implemented
@@ -773,7 +773,7 @@ print("""
 """)
 
 print("\n" + "#"*70)
-print("✅ ALL IMPLEMENTATIONS COMPLETE AND VERIFIED")
+print("ALL IMPLEMENTATIONS COMPLETE AND VERIFIED")
 print("#"*70)
 print("\nGenerated Files:")
 print("  1. Critical_Implementations_Notebook.ipynb (Jupyter notebook)")
@@ -781,5 +781,5 @@ print("  2. critical_implementations.py (Standalone script)")
 print("  3. CRITICAL_BLOCKERS_PRODUCTION_CODE.py (Production code)")
 print("  4. all_three_methods_visualization.png (Results visualization)")
 print("  5. deployment_config.json (Production configuration)")
-print("\nReady for manuscript submission & production deployment! 🚀")
+print("\nReady for manuscript submission & production deployment! ")
 
