@@ -1,18 +1,4 @@
-"""
-CRITICAL IMPLEMENTATIONS FOR REVIEWER COMMENTS
-Machine Failure Prediction in Industry 4.0
 
-This script implements three critical reviewer concerns:
-1. Machine-Level Group K-Fold Validation (Prevents data leakage)
-2. Cost-Sensitive Learning vs. SMOTE Comparison (Imbalance handling)
-3. Threshold Tuning for Components 1 & 3 (Improves precision for rare classes)
-
-All code is production-ready with reproducibility parameters.
-Random Seeds:
-  - Global seed: 42
-  - SMOTE seed: 2
-  - Logistic Regression seed: 41
-"""
 
 import numpy as np
 import pandas as pd
@@ -514,9 +500,7 @@ def compare_thresholds_comp1_comp3(y_test, y_pred_proba, components):
     return results_summary
 
 
-# ============================================================================
-# EXAMPLE USAGE
-# ============================================================================
+
 
 if __name__ == "__main__":
     print("\nCreating sample dataset (5-class imbalanced)...")
