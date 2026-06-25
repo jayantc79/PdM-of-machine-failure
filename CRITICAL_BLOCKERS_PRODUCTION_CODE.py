@@ -867,29 +867,3 @@ print(f"   Component 1 threshold: {tuning_results['comp1']['Optimal_Threshold']:
 print(f"   Component 3 threshold: {tuning_results['comp3']['Optimal_Threshold']:.2f}")
 """
 
-================================================================================
-KEY TAKEAWAYS & REVIEWER INSIGHTS
-================================================================================
-
-1. MACHINE-LEVEL GROUP K-FOLD VALIDATION:
-   ✓ Prevents data leakage by grouping machines
-   ✓ Shows 7.9% F1 degradation (0.63 → 0.70) = realistic evaluation
-   ✓ Ensures zero machine overlap in train/test
-   ✓ Addresses Reviewer 2's concern #1, Reviewer 4's concern #1
-
-2. COST-SENSITIVE LEARNING vs. SMOTE:
-   ✓ Comparison shows SMOTE as best method (F1=0.625)
-   ✓ 197% improvement over baseline (0.21 → 0.625)
-   ✓ Other methods: Class Weighting (0.55), ADASYN (0.61), Focal Loss (0.60)
-   ✓ Addresses Reviewer 2 comments #4, #18
-
-3. THRESHOLD TUNING FOR COMP1/3:
-   ✓ Component 1: Default threshold 0.50 → Optimal 0.75
-     Precision improvement: 2.6× (0.18 → 0.55)
-   ✓ Component 3: Default threshold 0.50 → Optimal 0.80
-     Precision improvement: 3.1× (0.17 → 0.52)
-   ✓ Recall trade-off acceptable (still >0.70)
-   ✓ Addresses Reviewer 4 comments #2, #6
-
-================================================================================
-
